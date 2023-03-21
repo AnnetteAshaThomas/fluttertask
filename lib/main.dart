@@ -52,17 +52,17 @@ backgroundColor: Colors.pink,
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children:[
-              Builder(
-                builder: (context) {
-                  return TextButton(onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const SecondPage()));
-                  }, ),
-                  child: 
-          Container(Text("Forgot password?"));
-                },
-              ),
+                Builder(
+                  builder: (context) {
+                    return TextButton(onPressed: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=>const SecondPage()));
+                    },
+                     child: Text("Forgot password?"));
+                  }
+                ),
               ],
             ),
+            Container(
             height: 40,
             width: double.infinity,
             decoration: BoxDecoration(
@@ -72,21 +72,13 @@ backgroundColor: Colors.pink,
                 Colors.orangeAccent.shade400,
                 Colors.red
               ])),
-              child: Builder(
-                builder: (context) {
-                  return MaterialButton(
-                        onPressed: () {
-                          Navigator.push(context, MaterialPageRoute(builder: (context)=> const FlowerPage()),);
-                        },
+               child:MaterialButton(
+                        onPressed: () {},
                       child: Text(
                         "Sign In",
                       style: TextStyle(
                         fontSize: 25,letterSpacing: 3,color: Colors.black),),),),
-                
-              
-                
-              
-              SizedBox(
+                SizedBox(
                 height: 40,
                 child: Divider(
                   height: 8,
@@ -105,7 +97,7 @@ backgroundColor: Colors.pink,
                   style: TextStyle(
                     color: Colors.black),
             ),),],
-              )
+              ),
           ],),),),
      );
     }
